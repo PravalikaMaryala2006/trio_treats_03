@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>TRIO TREATS | A Little Bite of Happiness | 100% Veg & Homemade Bakery</title>
+  
+  <meta name="description" content="Trio Treats - Sweet moments, baked with love. 100% pure veg and freshly homemade cupcakes, gourmet cookies, mini cookies with chocolate dip, and handcrafted chocolate boxes. Order online via WhatsApp at 7075881265.">
+  <meta name="keywords" content="Trio Treats, cupcakes, cookies, mini cookies with dip, chocolate boxes, pure veg bakery, homemade treats, Vinith 7075881265, trio_treats_03">
+  <meta name="theme-color" content="#5a2e28">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TRIO TREATS - A Little Bite of Happiness">
+  <meta property="og:description" content="100% Pure Veg & Freshly Homemade Cupcakes, Cookies & Chocolates. Order direct on WhatsApp: 7075881265.">
+  <meta property="og:image" content="logo.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon (Official Logo) -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. WELCOME ANIMATION SPLASH OVERLAY ("TRIO TREATS WELCOMES YOU")
+       ========================================================================== -->
+  <div id="welcome-splash" aria-label="Welcome to Trio Treats">
+    <div class="splash-particles">
+      <span class="particle" style="left: 10%; animation-delay: 0s; font-size: 1.4rem;">🧁</span>
+      <span class="particle" style="left: 25%; animation-delay: 2s; font-size: 1.2rem;">♡</span>
+      <span class="particle" style="left: 45%; animation-delay: 4s; font-size: 1.5rem;">🍪</span>
+      <span class="particle" style="left: 65%; animation-delay: 1s; font-size: 1.3rem;">✨</span>
+      <span class="particle" style="left: 80%; animation-delay: 3s; font-size: 1.3rem;">🍫</span>
+      <span class="particle" style="left: 90%; animation-delay: 5s; font-size: 1.4rem;">♡</span>
+    </div>
+
+    <div class="splash-content">
+      <div class="splash-logo-wrapper">
+        <div class="splash-logo-circle"></div>
+        <!-- Official Logo Image -->
+        <img src="logo.jpg" alt="Trio Treats Official Logo" class="splash-logo-img">
+      </div>
+
+      <span class="splash-subtitle-small">Sweet moments, baked with love ♡</span>
+      <h1 class="splash-title">TRIO TREATS</h1>
+      <h2 class="splash-welcome-text">✨ WELCOMES YOU ✨</h2>
+      <p class="splash-tagline">— A LITTLE BITE OF HAPPINESS —</p>
+
+      <div class="splash-badges">
+        <span class="splash-badge veg">
+          <span class="veg-icon-square"><span class="veg-icon-circle"></span></span>
+          100% Pure Veg
+        </span>
+        <span class="splash-badge homemade">
+          🏠 Freshly Homemade
+        </span>
+      </div>
+
+      <button id="enter-shop-btn" class="splash-enter-btn">
+        <span>Enter Treats Shop</span>
+        <span>🧁</span>
+      </button>
+
+      <div class="splash-progress-bar">
+        <div class="splash-progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. TOP ANNOUNCEMENT BAR & NAVIGATION HEADER
+       ========================================================================== -->
+  <div class="top-notice-bar">
+    <div class="notice-pill">
+      <span>🌿</span>
+      <span>100% Pure Veg & Homemade</span>
+    </div>
+    <div>
+      <span>🎁 Any 2 Cupcake Packs @ ₹320 • Any 2 Chocolate Boxes @ ₹230!</span>
+    </div>
+    <div>
+      <span>📞 Help / Orders: <strong>Vinith - 7075881265</strong></span>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Brand Logo / Official Emblem -->
+      <div class="brand-wrapper" onclick="showWelcomeSplash()" title="Click to replay welcome animation">
+        <div class="brand-logo-emblem">
+          <img src="logo.jpg" alt="Trio Treats Official Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">TRIO TREATS</span>
+          <span class="brand-tagline">A LITTLE BITE OF HAPPINESS ♡</span>
+        </div>
+      </div>
+
+      <!-- Veg & Homemade Quality Badges (Desktop) -->
+      <div class="header-badges">
+        <div class="veg-symbol-badge">
+          <span class="veg-icon-square"><span class="veg-icon-circle"></span></span>
+          <span>100% Pure Veg</span>
+        </div>
+        <div class="veg-symbol-badge" style="background: #fff3f5; color: var(--color-primary); border-color: rgba(234,112,133,0.3);">
+          <span>🏠 Homemade</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/trio_treats_03/" target="_blank" rel="noopener noreferrer" class="btn-instagram-header" title="Follow us on Instagram @trio_treats_03">
+          <span>📸</span>
+          <span>@trio_treats_03</span>
+        </a>
+
+        <!-- Cart Button -->
+        <button id="btn-header-cart" class="btn-header-cart" onclick="openCartDrawer()" aria-label="Open Treats Cart">
+          <span>🛒</span>
+          <span>Cart</span>
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       3. HERO BANNER
+       ========================================================================== -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-card">
+        <div class="hero-text-content">
+          <span class="hero-subheading">Sweet moments, baked with love ♡</span>
+          <h2 class="hero-heading">Freshly Baked <span>Treats</span> For Every Celebration</h2>
+          <p class="hero-description">
+            Handcrafted with passion using premium ingredients. From our velvety cupcakes to crispy gourmet cookies, mini cookies with rich dip, and artisanal chocolate gift boxes.
+          </p>
+
+          <div class="hero-meta-badges">
+            <span class="hero-meta-badge">
+              <span class="veg-icon-square"><span class="veg-icon-circle"></span></span>
+              100% Pure Vegetarian
+            </span>
+            <span class="hero-meta-badge">
+              <span>🏠</span>
+              100% Freshly Homemade
+            </span>
+            <span class="hero-meta-badge">
+              <span>🎀</span>
+              Gift Box Packaging
+            </span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#menu-catalog" class="btn-primary-hero">
+              <span>Explore Our Menu</span>
+              <span>↓</span>
+            </a>
+            <a href="#special-offers" class="btn-secondary-hero">
+              <span>🎁</span>
+              <span>Special Combos & Deals</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-stack">
+            <img src="chocolate-cupcakes.jpg" alt="Trio Treats Chocolate Cupcakes" class="hero-main-img">
+            <div class="hero-floating-card">
+              <div class="hero-floating-icon">🧁</div>
+              <div class="hero-floating-text">
+                <h4>Pack of 3 & 4</h4>
+                <p>Pure Veg & Baked Fresh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SPECIAL OFFERS SECTION (INTERACTIVE COMBO BUILDERS)
+         ========================================================================== -->
+    <section id="special-offers" class="offers-ribbon-section">
+      <div class="offers-grid">
+        <!-- Cupcake Offer: Choose 2 of 4 flavours @ ₹320 -->
+        <div class="offer-card" onclick="openCupcakeComboModal()" style="cursor: pointer;" title="Click to choose 2 cupcake flavors">
+          <div class="offer-info">
+            <div class="offer-icon-box">🧁</div>
+            <div>
+              <span class="offer-tag">Special Deal • Save up to ₹60</span>
+              <h4 class="offer-title">Any 2 Cupcake Packs</h4>
+              <p style="font-size: 0.78rem; color: var(--color-text-muted);">Pick any 2 out of 4 gourmet flavors</p>
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <span class="offer-price">@ ₹320</span>
+            <span style="display: block; font-size: 0.72rem; color: var(--color-accent-rose); font-weight: 700;">+ Choose Flavors</span>
+          </div>
+        </div>
+
+        <!-- Chocolate Box Offer: Choose 2 of 4 varieties @ ₹230 -->
+        <div class="offer-card" onclick="openChocolateComboModal()" style="cursor: pointer;" title="Click to choose 2 chocolate varieties">
+          <div class="offer-info">
+            <div class="offer-icon-box" style="background: #fdf0dc; color: #b6762e;">🍫</div>
+            <div>
+              <span class="offer-tag" style="color: #b6762e;">Special Deal • Save up to ₹48</span>
+              <h4 class="offer-title">Any 2 Chocolate Boxes</h4>
+              <p style="font-size: 0.78rem; color: var(--color-text-muted);">Pick any 2 out of 4 handmade varieties</p>
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <span class="offer-price" style="color: #b6762e;">@ ₹230</span>
+            <span style="display: block; font-size: 0.72rem; color: #b6762e; font-weight: 700;">+ Choose Varieties</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. MENU CATALOG SECTION & HORIZONTAL SCROLLABLE CATEGORIES
+         ========================================================================== -->
+    <section id="menu-catalog" class="menu-section">
+      <div class="section-header">
+        <span class="section-script-title">Our Menu ♡</span>
+        <h2 class="section-main-title">Handcrafted Treats Collection</h2>
+        <p class="section-subtitle">
+          Select any treat to view details. Tap + ADD to customize your bag and order directly on WhatsApp!
+        </p>
+      </div>
+
+      <!-- Category Filter Pills (Swiggy / Zomato Horizontal Scroll) -->
+      <div class="menu-filter-bar">
+        <button class="filter-pill active" data-category="all">
+          <span>✨</span>
+          <span>All Treats</span>
+        </button>
+        <button class="filter-pill" data-category="cupcakes">
+          <span>🧁</span>
+          <span>Cupcakes (Pack of 3)</span>
+        </button>
+        <button class="filter-pill" data-category="cookies">
+          <span>🍪</span>
+          <span>Cookies (Pack of 4)</span>
+        </button>
+        <button class="filter-pill" data-category="mini-cookies">
+          <span>🥤</span>
+          <span>Mini Cookies (with Dip)</span>
+        </button>
+        <button class="filter-pill" data-category="chocolate-boxes">
+          <span>🍫</span>
+          <span>Chocolate Boxes</span>
+        </button>
+      </div>
+
+      <!-- Live Search Box -->
+      <div class="search-and-sort-row">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="menu-search-input" class="menu-search-input" placeholder="Search cupcakes, red velvet, cookies, chocolate boxes..." aria-label="Search treats">
+        </div>
+      </div>
+
+      <!-- Dynamic Product Cards Grid -->
+      <div id="menu-grid" class="menu-grid">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       6. COMBO BUILDER MODAL (CHOOSE 2 CUPCAKES @ ₹320 / 2 CHOCOLATES @ ₹230)
+       ========================================================================== -->
+  <div id="combo-builder-overlay" class="combo-builder-overlay" onclick="if(event.target===this) closeComboModal()">
+    <div class="combo-modal-card">
+      <div class="combo-modal-header">
+        <div class="combo-header-left">
+          <span id="combo-modal-icon" style="font-size: 1.5rem;">🧁</span>
+          <div>
+            <h3 id="combo-modal-title">Customize Your Duo Combo</h3>
+            <p id="combo-modal-subtitle" style="font-size: 0.76rem; color: var(--color-text-muted);">Choose any 2 gourmet packs of your choice</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeComboModal()" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="combo-modal-body">
+        <!-- Step 1: Choose Pack 1 -->
+        <div class="combo-step-block">
+          <div class="combo-step-label">
+            <span class="combo-step-num">1</span>
+            <span id="combo-step1-title">Choose First Pack:</span>
+          </div>
+          <div id="combo-options-slot1" class="combo-options-grid">
+            <!-- Rendered by script.js -->
+          </div>
+        </div>
+
+        <!-- Step 2: Choose Pack 2 -->
+        <div class="combo-step-block">
+          <div class="combo-step-label">
+            <span class="combo-step-num">2</span>
+            <span id="combo-step2-title">Choose Second Pack:</span>
+          </div>
+          <div id="combo-options-slot2" class="combo-options-grid">
+            <!-- Rendered by script.js -->
+          </div>
+        </div>
+
+        <!-- Combo Price Summary & Add to Cart -->
+        <div class="combo-summary-bar">
+          <div>
+            <span style="font-size: 0.74rem; color: var(--color-text-muted); display: block; font-weight: 600;">SPECIAL COMBO PRICE</span>
+            <div>
+              <span id="combo-price-display" class="combo-price-large">₹320</span>
+              <span id="combo-original-price" class="combo-original-price">₹380</span>
+            </div>
+          </div>
+          <button class="btn-confirm-combo" onclick="confirmComboToCart()">
+            <span>Add Combo to Bag</span>
+            <span>🛒</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       7. SWIGGY / ZOMATO CART DRAWER (FULL VISIBILITY ON PHONES & LAPTOPS)
+       ========================================================================== -->
+  <div id="cart-drawer-overlay" class="cart-drawer-overlay" onclick="if(event.target===this) closeCartDrawer()">
+    <div class="cart-drawer">
+      <!-- Mobile drag pill handle -->
+      <div class="cart-sheet-handle-bar"></div>
+
+      <!-- Cart Header -->
+      <div class="cart-drawer-header">
+        <div class="cart-drawer-title-box">
+          <img src="logo.jpg" alt="Trio Treats" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--color-accent-pink); flex-shrink: 0;">
+          <div>
+            <h3>Your Treats Cart</h3>
+            <p style="font-size: 0.74rem; color: var(--color-veg); font-weight: 700;">🌿 100% Pure Veg • Freshly Homemade</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeCartDrawer()" aria-label="Close cart">✕</button>
+      </div>
+
+      <!-- ALL SCROLLABLE CONTENT: ITEMS FIRST (BIG & CLEAR), THEN BILL, THEN DELIVERY -->
+      <div class="cart-drawer-scroll-body">
+        
+        <!-- Cart Items Section Header -->
+        <div class="cart-items-section-header">
+          <span class="cart-items-section-title">Added Treats</span>
+          <span id="cart-items-badge-count" class="cart-items-badge-count">0 Items</span>
+        </div>
+
+        <!-- Items List - BIG, HIGH VISIBILITY, NEVER SQUEEZED -->
+        <div id="cart-drawer-items-list" class="cart-drawer-items-list">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Combo Offer Alert Banner -->
+        <div id="cart-offer-banner" class="cart-offer-alert" style="display: none;"></div>
+
+        <!-- Bill Details Card -->
+        <div class="cart-bill-section">
+          <div class="cart-bill-title">Bill Summary</div>
+          
+          <div class="cart-summary-line">
+            <span>Item Subtotal</span>
+            <span id="cart-subtotal" style="font-weight: 600;">₹0</span>
+          </div>
+
+          <div id="cart-discount-row" class="cart-summary-line discount" style="display: none;">
+            <span>Combo Offer Discount</span>
+            <span id="cart-discount-val">-₹0</span>
+          </div>
+
+          <div class="cart-summary-line">
+            <span>Delivery Charges</span>
+            <span style="color: var(--color-veg); font-weight: 600;">Calculated on WhatsApp</span>
+          </div>
+
+          <div class="cart-total-line">
+            <span>Grand Total</span>
+            <span id="cart-total">₹0</span>
+          </div>
+        </div>
+
+        <!-- Customer Delivery Details (Clean Inputs) -->
+        <div class="checkout-details-accordion">
+          <div class="checkout-details-title">
+            <span>📍</span>
+            <span>Delivery & Contact Details (Optional)</span>
+          </div>
+
+          <div class="checkout-input-group">
+            <label class="checkout-input-label" for="checkout-name">Your Name</label>
+            <input type="text" id="checkout-name" class="checkout-input-field" placeholder="e.g. Rahul / Priya">
+          </div>
+
+          <div class="checkout-input-group">
+            <label class="checkout-input-label" for="checkout-address">Delivery Address / Landmark</label>
+            <input type="text" id="checkout-address" class="checkout-input-field" placeholder="e.g. Flat 301, Sunshine Apts, Road No. 12">
+          </div>
+
+          <div class="checkout-input-group">
+            <label class="checkout-input-label" for="checkout-notes">Special Occasion or Note</label>
+            <input type="text" id="checkout-notes" class="checkout-input-field" placeholder="e.g. Birthday gift, please deliver fresh by 4 PM">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- STICKY BOTTOM CHECKOUT FOOTER (ONLY THE ACTION BUTTON - NEVER CROWDS THE ITEMS!) -->
+      <div class="cart-drawer-fixed-footer">
+        <button class="btn-proceed-whatsapp" onclick="proceedToWhatsApp()">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.35.491 1.199.534 1.286.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.957-1.399C8.423 21.498 10.153 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+            </svg>
+            <span>Proceed to Order on WhatsApp</span>
+          </div>
+          <span id="btn-proceed-amount">₹0 ➔</span>
+        </button>
+        <p class="whatsapp-btn-subtext">Direct WhatsApp order to <strong>Vinith (7075881265)</strong> • Quick confirmation</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       8. SWIGGY / ZOMATO STYLE STICKY FLOATING CART BAR (MOBILE & DESKTOP)
+       ========================================================================== -->
+  <div id="swiggy-cart-bar" class="swiggy-cart-bar" onclick="openCartDrawer()" role="button" aria-label="View Cart" style="display: none;">
+    <div class="swiggy-cart-left">
+      <div class="swiggy-cart-count-row">
+        <span id="swiggy-cart-items-count">0 ITEMS</span>
+        <span>|</span>
+        <span id="swiggy-cart-total-price">₹0</span>
+      </div>
+      <span class="swiggy-cart-subtext">Extra Combo discount applied in cart</span>
+    </div>
+
+    <div class="swiggy-cart-right">
+      <span>View Cart</span>
+      <span>➔</span>
+    </div>
+  </div>
+
+  <!-- Quick Floating WhatsApp Corner Button -->
+  <a href="https://wa.me/917075881265?text=Hi%20Vinith,%20I%20have%20a%20question%20about%20Trio%20Treats%20menu!" target="_blank" rel="noopener noreferrer" class="btn-floating-whatsapp-corner" title="Chat with Vinith on WhatsApp" aria-label="Chat with Vinith on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.35.491 1.199.534 1.286.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.957-1.399C8.423 21.498 10.153 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       9. FOOTER & HELP / CONTACT SECTION (VINITH: 7075881265)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+            <img src="logo.jpg" alt="Trio Treats Official Logo" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-accent-pink); flex-shrink: 0;">
+            <div>
+              <h3 style="margin: 0; line-height: 1.1;">TRIO TREATS</h3>
+              <p style="font-family: var(--font-script); font-size: 1.25rem; color: var(--color-accent-rose); margin: 0;">
+                A Little Bite of Happiness ♡
+              </p>
+            </div>
+          </div>
+          <p>
+            Delighting sweet cravings with premium homemade cupcakes, melt-in-mouth gourmet cookies, mini cookies with chocolate dips, and handcrafted chocolate gift boxes.
+          </p>
+          <div class="footer-badges">
+            <span class="veg-symbol-badge">
+              <span class="veg-icon-square"><span class="veg-icon-circle"></span></span>
+              100% Pure Veg
+            </span>
+            <span class="veg-symbol-badge" style="background: #fff0f3; color: var(--color-primary); border-color: rgba(234,112,133,0.3);">
+              🏠 Freshly Homemade
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick Menu Categories -->
+        <div class="footer-col">
+          <h4>Our Menu</h4>
+          <ul style="list-style: none; font-size: 0.9rem; line-height: 2;">
+            <li><a href="#menu-catalog" onclick="document.querySelector('[data-category=cupcakes]').click()">🧁 Cupcakes (Pack of 3)</a></li>
+            <li><a href="#menu-catalog" onclick="document.querySelector('[data-category=cookies]').click()">🍪 Cookies (Pack of 4)</a></li>
+            <li><a href="#menu-catalog" onclick="document.querySelector('[data-category=mini-cookies]').click()">🥤 Mini Cookies with Dip</a></li>
+            <li><a href="#menu-catalog" onclick="document.querySelector('[data-category=chocolate-boxes]').click()">🍫 Assorted Chocolate Boxes</a></li>
+            <li><a href="https://www.instagram.com/trio_treats_03/" target="_blank" rel="noopener noreferrer">📸 Follow on Instagram</a></li>
+          </ul>
+        </div>
+
+        <!-- Help & Contact Card (Vinith - 7075881265) -->
+        <div class="footer-col">
+          <h4>Help & Direct Contact</h4>
+          <div class="footer-help-card">
+            <div class="help-card-header">
+              <div class="help-avatar">V</div>
+              <div class="help-info">
+                <h5>Vinith</h5>
+                <p>Baker & Order Coordinator</p>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-contact-icon">📞</div>
+              <div>
+                <span style="font-size: 0.72rem; color: var(--color-text-light); display: block;">Call / WhatsApp</span>
+                <a href="tel:7075881265" class="footer-contact-link">7075881265</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-contact-icon">📸</div>
+              <div>
+                <span style="font-size: 0.72rem; color: var(--color-text-light); display: block;">Instagram</span>
+                <a href="https://www.instagram.com/trio_treats_03/" target="_blank" rel="noopener noreferrer" class="footer-contact-link">@trio_treats_03</a>
+              </div>
+            </div>
+
+            <div class="help-buttons">
+              <a href="tel:7075881265" class="btn-help-call">
+                <span>📞 Call</span>
+              </a>
+              <a href="https://wa.me/917075881265?text=Hi%20Vinith,%20I%20would%20like%20to%20order%20from%20Trio%20Treats!" target="_blank" class="btn-help-whatsapp">
+                <span>💬 WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 <strong>TRIO TREATS</strong>. Sweet moments, baked with love ♡. All rights reserved.
+        </div>
+        <div>
+          Follow on Instagram: <a href="https://www.instagram.com/trio_treats_03/" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent-rose); font-weight: 700;">@trio_treats_03</a> • Orders: <strong>Vinith (7075881265)</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
